@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        width: 1000px;
+        height: 680px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgb(215, 205, 200);
+    }
+
+    .header {
+        font-size: 30px;
+        margin-left: 20px;
+        width: 975px;
+        height: 50px;
+    }
+
+    .main {
+        width: 975px;
+        height: 500px;
+        margin-top: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .footer {
+        width: 600px;
+        height: 100px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .aside {
+        float: left;
+        width: 635px;
+        height: 500px;
+    }
+
+    img {
+        width: 635px;
+        height: 500px;
+    }
+
+    .article {
+        float: right;
+        width: 280px;
+        height: 500px;
+    }
+
+    li {
+        padding: 6px 0;
+    }
+
+    #a {
+        background-color: #7CFC00;
+        color: white;
+    }
+
+    #b {
+        background-color: black;
+        color: #7CFC00;
+        width: 110px;
+    }
+
+    #c {
+        margin-top: 20px;
+    }
+
+    #d {
+        width: 635px;
+        height: 80px;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div class="header">休闲办公椅</div>
+        <div class="main">
+            <div class="aside"><img src="./images/20.png"></div>
+            <div class="article">
+                <ul>商品参数
+                    <li id="c">商品名称：休闲办公椅</li>
+                    <li>商品型号：XX007</li>
+                    <li>净重：9.4KG</li>
+                    <li>毛重:10.4KG</li>
+                    <li>包装尺寸：610*540*280</li>
+                    <li>颜色：蓝色、黑色</li>
+                    <li>头枕：网布</li>
+                    <li>靠椅：PP塑料架</li>
+                    <li>底盘：单手柄底盘</li>
+                    <li>气杆：100mm黑色气杆</li>
+                    <li>脚轮：280mm电镀脚轮</li>
+                </ul>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="收藏" id="a">
+                <input type="button" value="购买此物品" id="b">
+            </div>
+        </div>
+        <div class="footer"><img src="./images/9.jpg" id="d"></div>
+    </div>
+</body>
+
+</html>

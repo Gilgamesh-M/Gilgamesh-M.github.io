@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h3 {
+        text-align: center;
+    }
+
+    .b {
+        letter-spacing: 9px;
+    }
+
+    table {
+        border: 3px dashed #87CEFA;
+        background-color: #E0FFFF;
+        width: 300px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 10px 15px 10px;
+    }
+
+    .c {
+        font-size: 25px;
+    }
+
+    .input_on {
+        border: 1px solid #999;
+        background-color: #87CEFA;
+    }
+
+    .input_off {
+        border: 1px solid #CCC;
+        background-color: #FFF;
+    }
+
+    .input_move {
+        border: 1px solid #999;
+        background-color: #87CEFA;
+    }
+
+    .input_out {
+        border: 1px solid #CCC;
+        background-color: #FFF;
+    }
+</style>
+
+<body>
+
+    <table align="center">
+        <tr>
+            <th class="c" colspan="2">用户登录</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <hr align="center" color="#87CEFA">
+            </td>
+        </tr>
+        <tr>
+            <td>用户名：</td>
+            <td><input type="text" placeholder="海阔天空"></td>
+        </tr><br>
+        <tr>
+            <td class="b">密码：</td>
+            <td><input type="password" placeholder="************"></td>
+        </tr><br>
+        <tr>
+            <th colspan="2"><input type="submit" value="登录" class="input_out"
+                    onfocus="this.className='input_on';this.οnmοuseοut=''"
+                    onblur="this.className='input_off';this.οnmοuseοut=function(){this.className='input_out'};"
+                    onmousemove="this.className='input_move'" onmouseout="this.className='input_out'" />
+                <input type="reset" value="注册" class="input_out" onfocus="this.className='input_on';this.οnmοuseοut=''"
+                    onblur="this.className='input_off';this.οnmοuseοut=function(){this.className='input_out'};"
+                    onmousemove="this.className='input_move'" onmouseout="this.className='input_out'" />
+            </th>
+        </tr>
+    </table>
+
+</body>
+
+</html>

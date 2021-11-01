@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        border: 6px solid pink;
+        border-collapse: collapse;
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    td {
+        background-color: #FFF0F5;
+    }
+
+    .a {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h4 align="center">用户注册</h4>
+    <table width="600" align="center" border="1">
+        <form action="">
+            <tr>
+                <td class="a">姓名</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td class="a">性别</td>
+                <td>
+                    <input type="radio" id="nan" name="sex"><label for="nan">男</label>
+                    <input type="radio" id="nv" name="sex"><label for="nv">女</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="a">国家</td>
+                <td>
+                    <select>
+                        <option>--请选择国家</option>
+                        <option>中国</option>
+                        <option>中国</option>
+                        <option>中国</option>
+                    </select>
+            </tr>
+            <tr>
+                <td class="a">生日</td>
+                <td><input type="datetime-local"></td>
+            </tr>
+            <tr>
+                <td class="a">手机号</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td class="a">邮箱</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td class="a">网站</td>
+                <td><input type="url"></td>
+            </tr>
+            <tr>
+                <td class="a">技术</td>
+                <td><input type="checkbox" name="love">JAVA<input type="checkbox" name="love">JSP<input type="checkbox"
+                        name="love">SERVLET</td>
+            </tr>
+            <tr>
+                <td class="a">喜欢的颜色</td>
+                <td><input type="color"></td>
+            </tr>
+            <tr>
+                <td class="a">密码</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td class="a">留言</td>
+                <td>
+                    <textarea rows="5">美丽的HTML5表单，世界更加完美</textarea>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2"><input type="submit" value="提交">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" value="重写">
+                </th>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>
