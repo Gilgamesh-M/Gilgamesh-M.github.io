@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张哲Gilgamesh</title>
+    <style type="text/css">
+        .a {
+            width: 400px;
+            margin: 200px auto;
+        }
+
+        .logo {
+            position: absolute;
+            top: 30%;
+            right: 0%;
+        }
+    </style>
+    <script type="text/javascript">
+        function my_open() {
+            let my_image = document.getElementById("light");
+            my_image.src = "./images/light1.gif";
+        }
+        function my_close() {
+            let my_image = document.getElementById("light");
+            my_image.src = "./images/light0.gif";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="a">
+        <button onclick="my_close()">关灯</button>
+        <img id="light" src="./images/light0.gif" alt="#" />
+        <button onclick="my_open()">开灯</button>
+    </div>
+    <div class="logo"><a href="sy7-1.html"><img src="./images/logo-l.png" width="200px" height="100px"></a></div>
+</body>
+
+</html>
