@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>张哲Gilgamesh</title>
+	<title>Gilgamesh</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<script
@@ -10,9 +10,14 @@
 	<link href="css/style.css" rel='stylesheet' type='text/css' />
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 	<link rel="icon" type="image/x-icon" href="bitbug_favicon.ico" />
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/fangzi.css">
+	<link rel="stylesheet" href="css/xinqing.css">
+	<link type="text/css" rel="stylesheet" href="css/gundong.css">
 	<script src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
@@ -50,18 +55,156 @@
 			</div>
 		</div>
 	</div>
-	<div class="banner">
-		<div class="container">
-			<div class="banner-top">
-			</div>
+	<div class="welcome-top heading">
+		<h3>WELCOME</h3>
+		<div class="welcome-bottom">
+			<img src="images/ren.jpg" alt="" />
+			<p>Time is not about how much you have, but how you use it.</p>
 		</div>
-		<div class="footer">
-			<div class="container">
-				<div class="footer-text">
-					<p>© 2021 网页设计与制作 | Designed by 张哲 </p>
+	</div>
+	<div class="team-top heading">
+		<h3>今天心情怎么样</h3>
+	</div>
+	<ul class="feedback">
+		<li class="angry">
+			<div>
+				<svg class="eye left">
+					<use xlink:href="#eye">
+				</svg>
+				<svg class="eye right">
+					<use xlink:href="#eye">
+				</svg>
+				<svg class="mouth">
+					<use xlink:href="#mouth">
+				</svg>
+			</div>
+		</li>
+		<li class="sad">
+			<div>
+				<svg class="eye left">
+					<use xlink:href="#eye">
+				</svg>
+				<svg class="eye right">
+					<use xlink:href="#eye">
+				</svg>
+				<svg class="mouth">
+					<use xlink:href="#mouth">
+				</svg>
+			</div>
+		</li>
+		<li class="ok">
+			<div></div>
+		</li>
+		<li class="good active">
+			<div>
+				<svg class="eye left">
+					<use xlink:href="#eye">
+				</svg>
+				<svg class="eye right">
+					<use xlink:href="#eye">
+				</svg>
+				<svg class="mouth">
+					<use xlink:href="#mouth">
+				</svg>
+			</div>
+		</li>
+		<li class="happy">
+			<div>
+				<svg class="eye left">
+					<use xlink:href="#eye">
+				</svg>
+				<svg class="eye right">
+					<use xlink:href="#eye">
+				</svg>
+			</div>
+		</li>
+	</ul>
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+		<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 4" id="eye">
+			<path d="M1,1 C1.83333333,2.16666667 2.66666667,2.75 3.5,2.75 C4.33333333,2.75 5.16666667,2.16666667 6,1">
+			</path>
+		</symbol>
+		<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 7" id="mouth">
+			<path d="M1,5.5 C3.66666667,2.5 6.33333333,1 9,1 C11.6666667,1 14.3333333,2.5 17,5.5"></path>
+		</symbol>
+	</svg>
+
+	</div>
+	<div class="banner-box">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide swiper-slide-center none-effect">
+					<a href="javascript:;">
+						<img src="images/t1.png" about="" title="">
+					</a>
 				</div>
+				<div class="swiper-slide">
+					<a href="javascript:;">
+						<img src="images/t2.png" about="" title="">
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="javascript:;">
+						<img src="images/t3.png" about="" title="">
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="javascript:;">
+						<img src="images/t4.png" about="" title="">
+					</a>
+				</div>
+
+			</div>
+			<div class="banner-arrow">
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
 			</div>
 		</div>
+		<div class="swiper-pagination"></div>
+
+	</div>
+
+	<script type="text/javascript">
+
+		window.onload = function () {
+			var swiper = new Swiper('.swiper-container', {
+				autoplay: 3000,
+				speed: 500,
+				autoplayDisableOnInteraction: true,
+				loop: true,
+				centeredSlides: true,
+				slidesPerView: 3,
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+				prevButton: '.swiper-button-prev',
+				nextButton: '.swiper-button-next',
+				onInit: function (swiper) {
+					swiper.slides[3].className = "swiper-slide swiper-slide-active";
+				},
+				breakpoints: {
+					100: {
+						slidesPerView: 0,
+					}
+				}
+			});
+		}
+
+	</script>
+	<div class="wrapper"></div>
+	<script src='js/react-with-addons.min.js'></script>
+	<script src='js/react-dom.min.js'></script>
+	<script src='js/TweenMax.min.js'></script>
+	<script src='js/jquery.min.js'></script>
+	<script src='js/jquery.parallax.min.js'></script>
+	<script src="js/script.js"></script>
+	<div class="footer">
+		<div class="container">
+			<div class="footer-text">
+				<p>© 2021 网页设计与制作 | Designed by 张哲 </p>
+			</div>
+		</div>
+	</div>
+	<script src="js/xinqing.js"></script>
 </body>
 
 </html>
